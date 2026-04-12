@@ -12,7 +12,9 @@
 **🔔 2026年3月26日更新提醒：** 脚本已更新v4.4.0，支持 **sing-box v1.13.x** ,若您已经安装了旧脚本，请先卸载后更新或重装脚本。也可使用以下命令进行卸载：
 
 > systemctl stop sing-box
+
 > rm -rf /usr/local/bin/sing-box
+
 > rm -rf /var/lib/sing-box-plus
 
 ---
