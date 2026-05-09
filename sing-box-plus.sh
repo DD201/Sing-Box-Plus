@@ -181,8 +181,7 @@ install_singbox_binary() {
   tmp="$(mktemp -d)" || return 1
 
   ensure_jq_static || { echo "[ERROR] 无法获取 jq，二进制模式失败"; rm -rf "$tmp"; return 1; }
-
-json="$(with_retry 3 curl -fsSL https://api.github.com/repos/SagerNet/sing-box/releases/latest)" || { rm -rf "$tmp"; return 1; }
+json="$(with_retry 3 curl -fsSL https://api.github.com/repos/SagerNet/sing-box/releases/tags/v1.13.7)" || { rm -rf "$tmp"; return 1; }
   url="$(printf '%s' "$json" | jq -r --arg a "$goarch" '
     .assets[] | select(.name|test("linux-" + $a + "\\.(tar\\.(xz|gz)|zip)$")) | .browser_download_url
   ' | head -n1)"
@@ -858,7 +857,7 @@ install_singbox() {
   command -v unzip >/dev/null 2>&1 || ensure_deps unzip   >/dev/null 2>&1 || true
 
   local repo="SagerNet/sing-box"
-  local tag="${SINGBOX_TAG:-latest}"   # 允许用环境变量固定版本，如 v1.12.7
+  local tag="${SINGBOX_TAG:-v1.13.7}"   # 允许用环境变量固定版本，如 v1.13.7
   local arch; arch="$(arch_map)"
   local api url tmp pkg re rel_url
 
