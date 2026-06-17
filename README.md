@@ -10,9 +10,7 @@
 * ✅ WARP 节点，将服务器 IP "变身" 为 Cloudflare 的中性出口，Gemini/Netflix/Disney+/YouTube 等流媒体解锁
 * ✅ **新增 AnyTLS 协议**（直连 + WARP 各一个），抗流量分析能力更强
 
-**🔔 2026年5月10日更新提醒：** 脚本已更新 v4.6.0，新增 AnyTLS 协议节点（直连 1 + WARP 1），节点总数由 18 → 20。
-
-**🔔 2026年5月9日更新提醒：** 脚本已更新 v4.5.0，固定 sing-box 版本为 v1.13.7，避免 sing-box 大幅度改变而导致脚本无法使用。
+**🔔 2026年6月17日更新提醒：** 搭建好后最下面的hysteria2 节点改用 pinnedPeerCertSha256，适配 Xray-core v26.2.6+ 移除 allowInsecure 后旧节点无法启动的问题（自 2026-06-01 起生效）。若新节点在 v2rayN  下仍连不上，可在 v2rayN 中把该节点内核切回 sing-box / 原生 Hysteria2。
 
 ---
 
