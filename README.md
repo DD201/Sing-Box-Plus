@@ -66,7 +66,7 @@ curl -fsSL -o sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999-newpa
 
 安装完成后，输入 `bash sing-box-plus.sh` 可进入管理页面。
 
-替换把默认 REALITY_SERVER 从 www.microsoft.com 改为 images.apple.com 版本
+替换把默认 REALITY_SERVER 从 www.microsoft.com 改为 images.apple.com 版本 有问题别用
 ```bash
 curl -fsSL -o sing-box-plus-apple.sh https://raw.githubusercontent.com/DD201/Sing-Box-Plus/main/sing-box-plus-apple.sh && chmod +x sing-box-plus-apple.sh && bash sing-box-plus-apple.sh
 ```
