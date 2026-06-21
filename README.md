@@ -68,7 +68,7 @@ curl -fsSL -o sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999-newpa
 
 替换把默认 REALITY_SERVER 从 www.microsoft.com 改为 images.apple.com 版本
 ```bash
-curl -fsSL -o sing-box-plus.sh https://raw.githubusercontent.com/DD201/Sing-Box-Plus/main/sing-box-plus-apple.sh  && chmod +x sing-box-plus-apple.sh && bash sing-box-plus-apple.sh
+curl -fsSL -o sing-box-plus-apple.sh https://raw.githubusercontent.com/DD201/Sing-Box-Plus/main/sing-box-plus-apple.sh && chmod +x sing-box-plus-apple.sh && bash sing-box-plus-apple.sh
 ```
 
 ---
