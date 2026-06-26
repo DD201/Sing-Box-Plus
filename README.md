@@ -76,7 +76,7 @@ curl -fsSL -o sing-box-plus-apple.sh https://raw.githubusercontent.com/DD201/Sin
 ## 🧭 功能菜单
 
 ```text
- 🚀 Sing-Box-Plus 管理脚本 v4.6.0 🚀
+ 🚀 Sing-Box-Plus 管理脚本 v4.7.0 🚀
  脚本更新地址: https://github.com/Alvin9999-newpac/Sing-Box-Plus
 =============================================================
 系统加速状态：已启用 / 未启用 BBR
@@ -99,9 +99,9 @@ Sing-Box 启动状态：运行中 / 未运行 / 未安装
 
 | 版本    | 日期     | 变更 |
 |--------|----------|------|
+| v4.7.0 | 2026-06  | reality协议节点增加多个域名，随机选择 |
 | v4.6.0 | 2026-05  | 新增 AnyTLS 协议节点（直连 + WARP），节点总数 18 → 20 |
 | v4.5.0 | 2026-05  | 固定 sing-box 版本为 v1.13.7 |
-| v4.4.0 | 2026-03  | 支持 sing-box 1.13.x |
 
 ---
 
